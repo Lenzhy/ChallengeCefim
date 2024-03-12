@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: #DD5555;
+}
+nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 50px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
