@@ -172,7 +172,7 @@ a{
     color: white;
     background-color: #DD5555;
     font-size:18px;
-    width: 150px;
+    width: 130px;
     border: solid #DD5555;
     border-radius: 7px;
 }
@@ -183,9 +183,9 @@ a{
     gap: 5px;
 }
 .buttonMail img{
-    width: 24px;
+    width: 25px;
     border-radius: 0;
-    max-height: 14px;
+    max-height: 25px;
 }
 /* <-- TEAM */
 
@@ -205,6 +205,12 @@ a{
         font-size: 36px;
         color: white;
     }
+    .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .form-row input[type="text"],
     .form-row input[type="email"]{
         border: none;
@@ -213,9 +219,18 @@ a{
         padding: 7px;
         font-size: 14px;
     }
+    .form-row,
+    .form-rowBot {
+        display: flex;
+        flex-direction: column;
+    }
     .form-rowTop{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .form-rowBot input[type="text"]{
+        height: 250px;
+        width: 100%;
     }
 /* <-- Footer  */
