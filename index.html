@@ -3,60 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <link href="styles.css" rel="stylesheet"/>
+    <link href="retina.css" rel="stylesheet" media="only screen and (-webkit-min-device-pixel-ratio: 2)"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <title>SuperApp</title>
 </head>
 <body>
 <header>
     <nav>
-        <span>SuperApp</span>
+        <picture>
+            <source srcset="images/Logo.png" media="(max-width: 400px)">
+            <source srcset="images/Logo@2x.png">
+            <img src="images/Logo@2x.png" alt="Logo">
+        </picture>
         <ul>
-            <li>A propos</li>
-            <li>Service</li>
-            <li>L'équipe</li>
-            <li>Contact</li>
+            <li> <a href="">A propos</a> </li>
+            <li> <a href="">Service</a></li>
+            <li> <a href=""> L'équipe</a></li>
+            <li> <a href="">Contact</a></li>
         </ul>
     </nav>   
-</header> 
+</header>
 
 <div class="hero">
-        <div class="hero-text">
-            <p> <h1>SUPER APP</h1> L'apication trop super !</p>
+        <div class="herocontainer">
+            <div class="hero-text">
+                <h1>SUPER APP</h1>
+                <span>L'application trop super !</span>
 
-        </div>
-        <div class="hero-button">
-            <button>Like it</button>
-            <button>Love it</button>
-            <button>Buy it</button>
+                <hr/>
+
+                <div class="hero-button">
+                <button type="button">
+                    <img src="images/thumbs-up.svg" alt="thumb"/>Like it
+                </button>
+                <button>Love it</button>
+                <button>Buy it</button>
+                 </div>
+              </div>
         </div>
     </div>
 <main>
     <div class="container">
-        <span>Elle FAIT DES TRUCS SUPERS !</span>
+        <span>ELLE FAIT DES TRUCS SUPERS !</span>
         <div class="cases">
             <div class="case">
-                <img src=""/>
-                <p><span>Mettre la table</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolore dolorem ea eaque eius expedita facere perferendis. Amet modi molestias mollitia necessitatibus quibusdam quod repudiandae soluta tenetur veniam, voluptates, voluptatibus.</p>
+                <div class="circle">
+                <img src="images/fork-and-knife-silhouette.svg"
+                     alt="fork and knife icon"/>
+            </div>
+                <span>Mettre la table</span>
+                <p>Lorem ipsum dolor sit amet, consectetur elit. Reprehendit provident nam officiis ex harum, dolor sit dicta mius fugit, debitis.</p>
             </div>
             <div class="case">
-                <img src=""/>
-                <p><span>Faire le lit</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolore dolorem ea eaque eius expedita facere perferendis. Amet modi molestias mollitia necessitatibus quibusdam quod repudiandae soluta tenetur veniam, voluptates, voluptatibus.</p>
+               <div class="circle">
+                   <img src="images/bed.svg"
+                        alt="bed icon"/>
+               </div>
+                <span>Faire le lit</span>
+                <p>Lorem ipsum dolor sit amet, consectetur elit. Reprehendit provident nam officiis ex harum, dolor sit dicta mius fugit, debitis.</p>
             </div>
             <div class="case">
-                <img src=""/>
-                <p><span>Allumer le feu</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolore dolorem ea eaque eius expedita facere perferendis. Amet modi molestias mollitia necessitatibus quibusdam quod repudiandae soluta tenetur veniam, voluptates, voluptatibus.</p>
+                <div class="circle">
+                    <img src="images/fire-symbol.svg"
+                         alt="Fire Icon"/>
+                </div>
+                <span>Allumer le feu</span>
+                <p>Lorem ipsum dolor sit amet, consectetur elit. Reprehendit provident nam officiis ex harum, dolor sit dicta mius fugit, debitis.</p>
             </div>
             <div class="case">
-                <img src=""/>
-                <p><span>Ramasser les feuilles</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolore dolorem ea eaque eius expedita facere perferendis. Amet modi molestias mollitia necessitatibus quibusdam quod repudiandae soluta tenetur veniam, voluptates, voluptatibus.</p>
+                <div class="circle">
+                    <img src="images/plant-leaf-with-white-details.svg"
+                         alt="leaf Icon"/>
+                </div>
+                <span>Ramasser les feuilles</span>
+                <p>Lorem ipsum dolor sit amet, consectetur elit. Reprehendit provident nam officiis ex harum, dolor sit dicta mius fugit, debitis.</p>
             </div>
             <div class="case">
-                <img src=""/>
-                <p><span>Protéger de la pluie</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolore dolorem ea eaque eius expedita facere perferendis. Amet modi molestias mollitia necessitatibus quibusdam quod repudiandae soluta tenetur veniam, voluptates, voluptatibus.</p>
+                <div class="circle">
+                    <img src="images/umbrella-black-silhouette.svg"
+                         alt="umbrella icon"/>
+                </div>
+                <span>Protéger de la pluie</span>
+                <p>Lorem ipsum dolor sit amet, consectetur elit. Reprehendit provident nam officiis ex harum, dolor sit dicta mius fugit, debitis.</p>
 
             </div>
             <div class="case">
-                <img src=""/>
-                <p><span>Vider votre compte</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolore dolorem ea eaque eius expedita facere perferendis. Amet modi molestias mollitia necessitatibus quibusdam quod repudiandae soluta tenetur veniam, voluptates, voluptatibus.</p>
+                <div class="circle">
+                    <img src="images/dollar-symbol.svg"
+                         alt="dollar icon"/>
+                </div>
+                <span>Vider votre compte</span>
+                <p>Lorem ipsum dolor sit amet, consectetur elit. Reprehendit provident nam officiis ex harum, dolor sit dicta mius fugit, debitis.</p>
             </div>
         </div>
     </div>
