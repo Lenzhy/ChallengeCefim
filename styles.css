@@ -174,7 +174,7 @@ a{
     font-size:18px;
     width: 150px;
     border: solid #DD5555;
-    border-radius: 15%;
+    border-radius: 7px;
 }
 .buttonMail {
    display: flex;
@@ -188,3 +188,34 @@ a{
     max-height: 14px;
 }
 /* <-- TEAM */
+
+/* Footer --> */
+    footer,
+    form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+    footer{
+    background-color: #DD5555;
+        padding: 50px;
+}
+    footer span{
+        font-size: 36px;
+        color: white;
+    }
+    .form-row input[type="text"],
+    .form-row input[type="email"]{
+        border: none;
+        border-radius: 3px;
+        width: 75%;
+        padding: 7px;
+        font-size: 14px;
+    }
+    .form-rowTop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+/* <-- Footer  */
