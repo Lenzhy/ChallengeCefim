@@ -10,7 +10,7 @@
     <title>SuperApp</title>
 </head>
 <body>
-<header>
+<header >
     <nav>
         <picture>
             <source srcset="images/Logo.png" media="(max-width: 400px)">
@@ -19,32 +19,39 @@
         </picture>
         <ul>
             <li> <a href="">A propos</a> </li>
-            <li> <a href="">Service</a></li>
-            <li> <a href=""> L'équipe</a></li>
-            <li> <a href="">Contact</a></li>
+            <li> <a href="#service">Service</a></li>
+            <li> <a href="#team"> L'équipe</a></li>
+            <li> <a href="#contact">Contact</a></li>
         </ul>
     </nav>   
 </header>
-
 <div class="hero">
         <div class="herocontainer">
             <div class="hero-text">
                 <h1>SUPER APP</h1>
                 <span>L'application trop super !</span>
 
-                <hr/>
 
+                <hr/>
                 <div class="hero-button">
-                <button type="button">
-                    <img src="images/thumbs-up.svg" alt="thumb"/>Like it
-                </button>
-                <button>Love it</button>
-                <button>Buy it</button>
+
+                    <button class="buttonHero">
+                    <img src="images/thumbs-up.svg" alt="thumb"/>
+                    Like it
+                    </button>
+                    <button class="buttonHero">
+                    <img src="images/heart-shape-silhouette.svg" alt="heart icon"/>
+                    Love it
+                    </button>
+                    <button class="buttonHero">
+                    <img src="images/shopping-cart-black-shape.svg" alt="shopping-cart icon"/>
+                    Buy it
+                    </button>
                  </div>
               </div>
         </div>
     </div>
-<main>
+<main id="service">
     <div class="container">
         <span>ELLE FAIT DES TRUCS SUPERS !</span>
         <div class="cases">
@@ -100,7 +107,7 @@
         </div>
     </div>
 </main>
-<section class="team">
+<section id="team">
     <div class="teamHeader">
 <span>La super équipe à l’origine de SuperApp </span>
     </div>
@@ -136,24 +143,33 @@
         </div>
     </div>
 </section>
-<footer>
+<footer id="contact">
     <span>ENVOYEZ-NOUS UN MESSAGE</span>
     <div class="form">
         <div class="form-rowTop">
-            <div class="form-row">
+            <div class="form-rowName">
             <label for="full-name">Nom</label>
             <input id="full-name" name="full-name" type="text"/>
             </div>
-            <div class="form-row">
+            <div class="form-rowEmail">
                 <label for="email">Email</label>
-                <input id="email" name="email" type="email" placeholder="bayou@example.com"/>
+                <input id="email" name="email" type="email" placeholder=""/>
             </div>
         </div>
-        <div class="form-rowBot">
+
+            <div class="form-rowBot">
             <label for="message">Votre message:</label>
             <input id="message" name="message" type="text"/>
-        </div>
+            </div>
 
+
+
+    </div>
+    <div class="Footer-Button">
+        <button class="buttonFooter">
+            <img src="images/paper-plane.svg" alt="paper-plane icon">
+            envoyer
+        </button>
     </div>
 
 </footer>
