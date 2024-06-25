@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <link href="styles.css" rel="stylesheet"/>
-    <link href="retina.css" rel="stylesheet" media="only screen and (-webkit-min-device-pixel-ratio: 2)"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <title>SuperApp</title>
+    <script src="destruction-bis.js"></script>
+
 </head>
-<body>
+<body id="body">
 <header >
     <nav>
         <picture>
@@ -148,11 +149,11 @@
     <div class="form">
         <div class="form-rowTop">
             <div class="form-rowName">
-            <label for="full-name">Nom</label>
+            <label for="full-name">Votre nom</label>
             <input id="full-name" name="full-name" type="text"/>
             </div>
             <div class="form-rowEmail">
-                <label for="email">Email</label>
+                <label for="email">Votre email</label>
                 <input id="email" name="email" type="email" placeholder=""/>
             </div>
         </div>
@@ -168,7 +169,7 @@
     <div class="Footer-Button">
         <button class="buttonFooter">
             <img src="images/paper-plane.svg" alt="paper-plane icon">
-            envoyer
+            Envoyer
         </button>
     </div>
 

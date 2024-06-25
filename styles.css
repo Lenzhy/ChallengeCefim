@@ -5,7 +5,7 @@ body{
     padding: 0;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
-    max-width: 1400px;
+
 }
 
 /*header-->*/
@@ -39,11 +39,15 @@ a{
     color: white;
     padding:16px;
 }
+a:hover {
+    background-color: #651d1d;
+    border-radius: 3px;
+}
 /*<--header*/
 
 /*hero-->*/
 .hero{
-    background-image: url("images/about.jpg.png");
+    background-image: url("images/about.jpg@2x.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -100,6 +104,7 @@ a{
 
 
 }
+
 /*<--hero*/
 
 /*Main-->*/
@@ -180,6 +185,7 @@ a{
     text-align: center;
     gap: 15px;
     font-size: 38px;
+    font-weight: 600;
     margin: 15px;
 }
 .member img{
@@ -187,22 +193,17 @@ a{
     height: 239px;
     border-radius: 50%;
 }
-.member button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    color: white;
-    background-color: #DD5555;
-    font-size:18px;
-    width: 130px;
-    border: solid #DD5555;
-    border-radius: 7px;
-}
 .buttonMail {
    display: flex;
     justify-content: center;
     align-items: center;
+    padding: 8px;
+    color: white;
+    background-color: #DD5555;
+    font-size:18px;
+    width: 130px;
+    border: none;
+    border-radius: 7px;
     gap: 5px;
 }
 .buttonMail img{
@@ -210,27 +211,30 @@ a{
     border-radius: 0;
     max-height: 25px;
 }
+.buttonMail:hover{
+    background-color: #651d1d;
+}
 /* <-- TEAM */
 
 /* Footer --> */
-    footer,
-    form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+footer,
+form{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
 }
-    footer{
+footer{
     background-color: #DD5555;
         padding: 50px;
 }
-    footer span{
+footer span{
         font-size: 36px;
         color: white;
         text-align: center;
         font-weight: 600;
     }
-    .form{
+.form{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -240,62 +244,88 @@ a{
         gap: 15px;
         font-size: 16px;
     }
-    .form-rowTop{
-        width: 100%;
-        display: flex;
-        gap:50px;
+.form-rowTop{
+width: 100%;
+display: flex;
+gap:50px;
 
-    }
-    .form-rowName,
-    .form-rowEmail{
-        display: flex;
-        flex-direction: column;
-    }
-    .form-rowBot{
-        width: 100%;
-        margin-top: 5px;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-
-    }
-    .form-rowName input[type="text"],
-    .form-rowEmail input[type="email"],
-    .form-rowBot input[type="text"]{
-        border: none;
-        border-radius: 3px;
-        font-size: 14px;
-        padding: 0;
-    }
-    .form-rowBot input[type="text"]{
-        height: 200px;
-        width: 100%;
-    }
-    .form-rowName input[type="text"],
-    .form-rowEmail input[type="email"]{
-  height: 25px;
 }
-    .form-rowEmail,
-    .form-rowName{
+.form-rowName,
+.form-rowEmail{
+display: flex;
+flex-direction: column;
+}
+.form-rowBot{
+width: 100%;
+margin-top: 5px;
+display: flex;
+flex-direction: column;
+gap: 5px;
+
+}
+.form-rowName input[type="text"],
+.form-rowEmail input[type="email"],
+.form-rowBot input[type="text"]{
+border: none;
+border-radius: 3px;
+font-size: 14px;
+padding: 0;
+}
+.form-rowBot input[type="text"]{
+height: 200px;
+width: 100%;
+}
+.form-rowName input[type="text"],
+.form-rowEmail input[type="email"]{
+height: 25px;
+}
+.form-rowEmail,
+.form-rowName{
+display: flex;
+justify-content: flex-end;
+width: 100%;gap: 5px;
+}
+.buttonFooter{
     display: flex;
-    justify-content: flex-end;
-    width: 100%;gap: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 125px;
+    height: 45px;
+    border-radius: 3px;
+    border: none;
+    font-size: 18px;
 }
-    .buttonFooter{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 5px;
-        width: 125px;
-        height: 45px;
-        border-radius: 3px;
-        border: none;
-        font-size: 18px;
-    }
-    .Footer-Button{
+.Footer-Button{
         width: 100%;
         display: flex;
         justify-content: flex-end;
         margin-top: 15px;
     }
 /* <-- Footer  */
+
+button{
+    cursor: pointer;
+}
+.buttonHero:hover,
+.buttonFooter:hover{
+    background-color: #b9b9b9;
+}
+
+/*Test retina*/
+/*
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .hero {
+        background-image: url("images/about.jpg@2x.png");
+    }
+    .teamHeader {
+        background-image: url("images/team.jpg@2x.png");
+    }
+}
+*/
+
+
+
+
